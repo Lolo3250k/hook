@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <form action="post" id="formulario">
+
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <button onclick="login()">Enviar datos</button>
+
+        </form>
+    </div>
+
+    <script>
+
+        
+
+        function login() {
+
+            event.preventDefault()
+            let username, password;
+
+            username = document.getElementById("username").value;
+            password = document.getElementById("password").value;
+
+            if (username == "lolo" && password == "lolo") {
+                console.log(username)
+            } else {
+                console.log("lolo")
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
